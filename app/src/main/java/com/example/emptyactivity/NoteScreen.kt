@@ -101,12 +101,10 @@ class NoteScreen : ComponentActivity() {
         backButton.setOnClickListener { v: View? -> onBackPressedDispatcher.onBackPressed() }
 
 //        code for the image button and to display image
-
         val pickImageLauncher = registerForActivityResult(ActivityResultContracts.StartActivityForResult()) { result ->
                 if (result.resultCode == RESULT_OK && result.data != null) {
                     val uri = result.data?.data
                     imgGallery.setImageURI(uri)
-
                     // Save the image path
                     selectedImagePath = uri.toString()
                 }

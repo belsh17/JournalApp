@@ -84,6 +84,12 @@ dependencies {
     implementation ("com.google.android.material:material:1.4.0")
     implementation("at.favre.lib:bcrypt:0.9.0")
     kapt("androidx.room:room-compiler:2.6.1")
+    implementation("androidx.test:core:1.4.0")
+    implementation("androidx.test.ext:junit:1.1.3")
+    implementation("androidx.test:runner:1.4.0")
+
+    // Room Database testing support
+    androidTestImplementation("androidx.room:room-testing:2.4.0")
 
 
 }
