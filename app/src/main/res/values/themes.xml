@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Theme.EmptyActivity" parent="android:Theme.Material.Light.NoActionBar" />
+    <style name="CustomButtonStyle" parent="Widget.MaterialComponents.Button">
+        <item name="android:backgroundTint">@color/teal_200</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+    <style name="CustomButtonStyle2" parent="Widget.MaterialComponents.Button">
+        <item name="android:backgroundTint">@color/white</item>
+        <item name="android:textColor">@color/teal_200</item>
+    </style>
+    <style name="CustomButtonStyle3" parent="Widget.MaterialComponents.Button">
+        <item name="android:backgroundTint">@color/white</item>
+        <item name="android:textColor">@color/light_blue</item>
+    </style>
+    <style name="CustomButtonStyle4" parent="Widget.MaterialComponents.Button">
+        <item name="android:backgroundTint">@color/light_blue</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+</resources>

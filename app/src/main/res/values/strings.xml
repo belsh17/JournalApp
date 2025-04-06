@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">emptyActivity</string>
+    <string name="title_activity_note_screen">NoteScreen</string>
+</resources>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="8dp"
+    android:orientation="vertical"
+    android:background="@drawable/mood_card_background"
+    android:layout_margin="8dp"
+    android:elevation="8dp"
+    android:clipToPadding="false">
+
+    <TextView
+        android:id="@+id/textViewContent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Note Content"
+        android:fontFamily="sans-serif"
+        android:textSize="20sp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/textViewDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Date"
+        android:textSize="14sp"
+        android:textColor="@color/light_blue"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="end">
+
+        <ImageButton
+            android:id="@+id/btnEdit"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@android:drawable/ic_menu_edit"
+            android:background="?android:attr/selectableItemBackground"/>
+
+        <ImageButton
+            android:id="@+id/btnDelete"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@android:drawable/ic_delete"
+            android:background="?android:attr/selectableItemBackground"/>
+    </LinearLayout>
+
+</LinearLayout>
+<!--    android:textColor="@android:color/darker_gray"-->
+    <!--    top linearlayout height was match parent-->
+<!--    android:background="@android:color/white"-->
+<!--    android:padding="12dp"-->
+<!--    android:elevation="4dp"-->

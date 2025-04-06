@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ImageButton
+        android:id="@+id/back_button"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@drawable/circle_background"
+        android:src="@drawable/ic_back"
+        android:scaleType="centerCrop"
+        android:contentDescription="Back"
+        android:layout_margin="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <ImageView
+        android:id="@+id/signUpImg"
+        android:layout_width="300dp"
+        android:layout_height="250dp"
+        android:scaleType="centerCrop"
+        android:layout_marginTop="60dp"
+        android:contentDescription="Sign up Logo"
+        android:src="@drawable/signup_img"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/suHeading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sign Up"
+        android:textStyle="bold"
+        android:fontFamily="sans-serif"
+        android:textColor="@color/light_blue"
+        android:textSize="40dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/signUpImg"/>
+
+    <TextView
+        android:id="@+id/suPhrase"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Just a few quick things to get started."
+        android:textSize="20dp"
+        android:fontFamily="sans-serif-thin"
+        android:layout_marginLeft="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/suHeading"
+        tools:ignore="MissingConstraints" />
+
+<!--    username text box-->
+    <EditText
+        android:id="@+id/suUsername"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Username"
+        android:inputType="text"
+        android:layout_margin="25dp"
+        android:padding="15dp"
+        android:background="@android:drawable/editbox_background"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/suPhrase"/>
+
+<!--    email address text box-->
+    <EditText
+        android:id="@+id/suEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Email Address"
+        android:inputType="text"
+        android:layout_margin="25dp"
+        android:padding="15dp"
+        android:background="@android:drawable/editbox_background"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/suUsername"/>
+
+<!--    password text box-->
+    <EditText
+        android:id="@+id/suPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:layout_margin="25dp"
+        android:padding="15dp"
+        android:background="@android:drawable/editbox_background"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/suEmail"/>
+
+    <!--    password text box-->
+    <EditText
+        android:id="@+id/suPasswordConfirm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Confirm Password"
+        android:inputType="textPassword"
+        android:layout_margin="25dp"
+        android:padding="15dp"
+        android:background="@android:drawable/editbox_background"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/suPassword"/>
+
+<!--    sign up button-->
+   <Button
+       android:id="@+id/suButton"
+       android:layout_width="200dp"
+       android:layout_height="wrap_content"
+       android:text="Sign Up"
+       android:background="@color/light_blue"
+       android:textColor="@color/white"
+       android:textSize="20dp"
+       android:fontFamily="sans-serif"
+       android:layout_marginTop="20dp"
+       app:layout_constraintStart_toStartOf="parent"
+       app:layout_constraintEnd_toEndOf="parent"
+       app:layout_constraintTop_toBottomOf="@id/suPasswordConfirm"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
